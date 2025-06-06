@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H2O Companion</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="toast"
+        style="display:none; position:fixed; top:40px; left:50%; transform:translateX(-50%); background:#23283a; color:#6ec6ff; padding:18px 32px; border-radius:12px; font-size:1.2rem; z-index:9999; box-shadow:0 4px 24px rgba(0,0,0,0.25); font-family:'Segoe UI', Arial, sans-serif; font-weight:bold;">
+    </div>
+    <div class="mega-container">
+        <div class="container">
+            </div>
+            <div class="widget-container">
+                <div class="titlebar"
+                    style="width:100%; display:flex; justify-content:space-between; align-items:center; position:relative; height:24px; margin-bottom:8px;">
+                    <button id="langBtn"
+                        style="background:transparent; border:none; color:#6ec6ff; font-size:18px; cursor:pointer; margin-left:8px; -webkit-app-region: no-drag;">EN/IT
+                    </button>
+                    <div style="display:flex;">
+                        <button id="minimizeBtn"
+                            style="background:transparent; border:none; color:#6ec6ff; font-size:18px; cursor:pointer; margin-right:4px; -webkit-app-region: no-drag;">&#8211;
+                        </button>
+                        <button id="closeBtn"
+                            style="background:transparent; border:none; color:#ff5f56; font-size:18px; cursor:pointer; margin-right:4px; -webkit-app-region: no-drag;">&#10005;
+                        </button>
+                    </div>
+                </div>
+                <h1 class="header">H2O Companion</h1>
+                <div class="description">
+                    <p class="text">Questa app ti aiuta a tenere traccia della tua assunzione di acqua.</p>
+                    <br class="text">Clicca "Aggiungi" per aggiungere un bicchiere d'acqua, "Rimuovi" per toglierne uno e
+                    "Reset" per azzerare il contatore.
+                </div>
+                <div class="counter-container">
+                    <img src="assets/water.png" alt="acqua" id="waterImage">
+                    <div id="water-counter">0</div>
+                    <div id="water-counter-text">Bicchieri</div>
+                </div>
+                <input type="number" id="currentGoal" disabled style="margin-bottom:18px;">
+                <div class="cup-container">
+                    <div class="container">
+                        <button class="button" id="addCup">Aggiungi</button>
+                        <button class="button" id="removeBtn">Rimuovi</button>
+                        <button class="button" id="resetBtn">Reset</button>
+                    </div>
+                    <div class="goal-container">
+                        <label for="goalInput">Imposta il tuo obiettivo giornaliero di bicchieri d'acqua</label>
+                        <br>
+                        <input type="number" id="goalInput">
+                        <button class="button" id="setGoalBtn">Imposta obiettivo</button>
+                        <br>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+
+</html>

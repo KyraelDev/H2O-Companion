@@ -1,0 +1,42 @@
+# Node modules (dependencies)
+node_modules/
+
+# Build output
+dist/
+build/
+out/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files (if any)
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VSCode settings (se usi VSCode)
+.vscode/
+
+# Mac specific files
+.AppleDouble
+.LSOverride
+
+# Windows specific files
+ehthumbs.db
+Desktop.ini
+
+# Electron packaging temp files (se usi electron-builder o simili)
+*.asar
+
+# Optional: ignore exe files se vuoi tenerli fuori dal repo (ma in genere li metti nel release)
+# *.exe
+
+# Optional: exclude debug and coverage reports
+coverage/
+*.log

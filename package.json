@@ -1,0 +1,45 @@
+{
+  "name": "h2o-companion",
+  "version": "1.0.0",
+  "description": "A Desktop Widget to keep track of your water intake",
+  "main": "main.js",
+  "author": "KyraDev",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "electron": "^36.4.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.kyradev.h2ocompanion",
+    "productName": "H2O Companion",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!node_modules/.bin",
+      "!dist",
+      "!*.md"
+    ],
+    "extraResources": [
+      {
+        "from": "assets/",
+        "to": "assets",
+        "filter": ["**/*"]
+      }
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "assets/water.ico"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "assets/water.png"
+    }
+  }
+}
